@@ -45,10 +45,12 @@ export default function BookScreen() {
       setBooks(apiBooks);
     } catch (err) {
       console.error(err);
-      setError("Could not load books from the API.");
-      Alert.alert("Error", "Could not load books from the API.");
+      Alert.alert("Could not load books from the API.");
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      
     }
   };
 

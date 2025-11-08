@@ -44,10 +44,11 @@ export default function MovieScreen() {
       setMovies(apiMovies);
     } catch (err) {
       console.error(err);
-      setError("Could not load movies from the API.");
-      Alert.alert("Error", "Could not load movies from the API.");
+      Alert.alert("Could not load movies from the API.");
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
     }
   };
 
