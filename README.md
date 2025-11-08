@@ -1,51 +1,46 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## PACKAGES 
+### @expo-google-fonts/fredoka-one
+### Tabs from expo Router
 
-## Get started
+## Low- Fi Wireframe
+![Alt text](low-fi-project-2.jpg)
+### Book and Movie Web App ###
+In designing this Book and Movie app, I implemented Human Interface Guidelines
+by making sure the user experiences feels visually appealing. I focused on using
+a clear navigation system by using the expo tabs, one for Book and one for
+Movies. This allows users to easily switch back and forth between their book
+and movie list.
 
-1. Install dependencies
+My application is a read/watched movie app where you can add books or movies
+by the title, rating and author/director. This will add them to a list where you
+can mark them done or leave them blank if you havent gotten to them. 
+The functionality I added was the motion detector to change the theme between
+Forest, Sunrise, Midnight and Ocean. The themes are implemented using context and 
+the books and movies are stored with Async storage. Wether the user closes out the 
+app, the data and theme will still persist. 
 
-   ```bash
-   npm install
-   ```
+According to the HIG guidelines, "consistent interface elements make it easier to complete tasks." I maintained consistency by:
+- Using the same card-based layout for both Books and Movies screens
+- Implementing identical "Add" components with matching input fields (title, author/director, rating)
+- Using the same checkbox pattern for marking items as read/watched
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The plan is to 
+   - add a home screen that says books or movie buttons
+   -If you click on the book screen it will say loading bar and then fetch all the books
+      -the book screen has a button that takes you to the third screen which is Movies
+   -If you click on the movie screen it will say loding bar and then fetch all the books
 
-## Join the community
+-Add a delete API to delete books from the ItemsList
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# se-3020-api
